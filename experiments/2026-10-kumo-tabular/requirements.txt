@@ -1,0 +1,11 @@
+# Colab already includes torch, pandas, numpy, scikit-learn and matplotlib. The notebook installs only the pinned packages below.
+# structured-data-models is alpha and its PyPI name is an empty 0.0.0a0 placeholder, so it is pinned to a GitHub commit.
+structured-data-models @ git+https://github.com/NVIDIA/structured-data-models.git@ce95710703a8be5744c756cd2f662ed79d3ee444
+xgboost==3.4.1
+lightgbm==4.7.0
+imbalanced-learn==0.14.2
+torch>=2.7
+pandas
+numpy
+scikit-learn
+matplotlib
