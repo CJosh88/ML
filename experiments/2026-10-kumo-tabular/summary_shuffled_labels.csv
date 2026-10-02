@@ -1,0 +1,25 @@
+dataset,model,true_labels_roc_auc,shuffled_labels_mean_roc_auc,shuffled_labels_max_roc_auc
+adult,kumo-large,0.924,0.376,0.489
+adult,kumo-small,0.919,0.312,0.373
+adult,tabiclv2,0.910,0.392,0.471
+adult,xgboost (default),0.896,0.500,0.513
+bank (no duration),kumo-large,0.749,0.412,0.508
+bank (no duration),kumo-small,0.753,0.465,0.555
+bank (no duration),tabiclv2,0.739,0.448,0.533
+bank (no duration),xgboost (default),0.696,0.445,0.457
+credit-g,kumo-large,0.804,0.455,0.590
+credit-g,kumo-small,0.804,0.445,0.543
+credit-g,tabiclv2,0.801,0.451,0.557
+credit-g,xgboost (default),0.750,0.485,0.536
+diabetes,kumo-large,0.832,0.624,0.628
+diabetes,kumo-small,0.828,0.549,0.561
+diabetes,tabiclv2,0.822,0.572,0.657
+diabetes,xgboost (default),0.792,0.553,0.561
+kc1,kumo-large,0.873,0.412,0.627
+kc1,kumo-small,0.863,0.500,0.653
+kc1,tabiclv2,0.866,0.361,0.409
+kc1,xgboost (default),0.819,0.353,0.370
+phoneme,kumo-large,0.966,0.573,0.655
+phoneme,kumo-small,0.961,0.406,0.496
+phoneme,tabiclv2,0.958,0.505,0.623
+phoneme,xgboost (default),0.929,0.509,0.547
