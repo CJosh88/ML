@@ -1,0 +1,15 @@
+# Colab already includes torch, pandas, numpy, scikit-learn, scipy, seaborn, matplotlib and pillow. The notebook installs only the pinned packages below.
+# transformers 5.17.0 fits everything: d1-omni needs >=5.15 and Unsloth 2026.10.3 needs <=5.17.
+unsloth==2026.10.3
+unsloth_zoo==2026.10.3
+transformers==5.17.0
+datasets==4.8.5
+anthropic==1.12.1
+torch
+pandas
+numpy
+scikit-learn
+scipy
+seaborn
+matplotlib
+pillow
