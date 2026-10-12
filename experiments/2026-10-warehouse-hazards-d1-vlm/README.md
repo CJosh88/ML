@@ -49,4 +49,4 @@ The fine-tuned arm uses Unsloth's standard vision fine-tune (`FastVisionModel`),
 
 ## Results
 
-Results here: TODO, link to the Quarto post once published.
+Results here: [Spotting warehouse hazards: the prompt mattered as much as fine-tuning](https://CJosh88.github.io/ai-portfolio/experiments/2026-10-warehouse-hazards-d1-vlm/)
