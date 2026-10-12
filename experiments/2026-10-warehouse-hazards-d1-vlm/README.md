@@ -42,7 +42,7 @@ The fine-tuned arm uses Unsloth's standard vision fine-tune (`FastVisionModel`),
 
 1. Click **Open in Colab** above, then choose **Runtime → Change runtime type → T4 GPU**.
 2. Optional: to include Claude, add a Colab secret named `ANTHROPIC_API_KEY` (key icon in the left sidebar). The notebook prints a cost estimate before the first full call. Without a key, the Claude arm is skipped. Note that it sends the test images to Anthropic's API.
-3. Optional: set `SMOKE_N = 8` in the Config cell for a quick end-to-end check first. It uses a separate cache and a tiny fine-tune.
+3. Optional: set `SMOKE_N = 2` in the Config cell for a quick end-to-end check first (2 calibration and 2 test images per class). It uses a separate cache and a tiny fine-tune.
 4. Choose **Runtime → Run all**. Predictions and the fine-tuned adapter are cached under `outputs/`, so a rerun after a disconnect resumes. Set `USE_DRIVE = True` to keep them on Google Drive. The last cell zips and downloads all results.
 5. Commit `figures/`, `results.csv`, `summary.csv`, `thresholds.csv` and `reliability_hazard.csv`. The `outputs/` folder is git-ignored.
 
