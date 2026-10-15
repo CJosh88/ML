@@ -1,0 +1,13 @@
+# Colab already includes pandas, numpy, matplotlib, scipy, tqdm and tokenizers. The notebook installs the pinned packages below,
+# plus the Ollama server (pinned to 0.40.4 in the Setup cell), and pulls qwen3.5:4b through Ollama.
+deepagents==0.7.25
+langchain==1.4.6
+langchain-core==1.6.10
+langgraph==1.2.15
+langchain-ollama==1.1.0
+tokenizers
+scipy
+pandas
+numpy
+matplotlib
+tqdm
