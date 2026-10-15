@@ -28,6 +28,23 @@ Everything is held constant except the harness: `qwen3.5:4b` through Ollama on a
 
 Deep Agents' defaults are tuned for frontier models: offloading starts at about 20k tokens, and summarisation at 170k tokens for models without a context-size profile (all Ollama models). Neither would ever fire at this scale, so the notebook sets both thresholds explicitly.
 
+## Part 2: summarisation
+
+In Part 1, offloading kept the context so small that summarisation barely fired. Part 2 isolates summarisation with a task where the context grows from **many small results** that are never offloaded:
+
+- **Tool:** `get_series(country, metric)` returns one country's 2004–2023 values for one metric (about 370 tokens).
+- **Questions:** 18 questions (6 per level) on 6, 30 or 50 countries, so about 2k, 11k or 18k tokens of lookups: below both triggers, between them, and over the 16k window.
+
+| Arm | What it is |
+|---|---|
+| S1 No summary | Deep Agents harness, summarisation off |
+| S2 Summary at 85% | Automatic summarisation at 13.9k tokens |
+| S3 Summary at 50% | Automatic summarisation at 8.2k tokens |
+| S4 85% + keep-numbers prompt | Deep Agents' default summary prompt plus an instruction to list every looked-up value verbatim |
+| S5 `compact_conversation` tool | No automatic trigger; the model decides when to compact (allowed from 20 messages), with a short system-prompt nudge |
+
+As well as accuracy, Part 2 checks every summary's numbers against the data: for each summarised country, whether the summary kept the needed value, stated a different number, or dropped it.
+
 ## Metrics
 
 - Accuracy overall and by level (1/3/5 countries), with Wilson 95% intervals and exact McNemar tests against the plain loop. The headline is **lenient** accuracy: the reply's last line names the gold country or year and the gold number. **Strict** accuracy also needs the `ANSWER:` line and is reported alongside it, because the Deep Agents arms often stated the right answer in prose and dropped that line.
@@ -42,8 +59,8 @@ Deep Agents' defaults are tuned for frontier models: offloading starts at about 
 2. Choose **Runtime → Run all**. The notebook installs Ollama 0.40.4 and the pinned packages, then pulls `qwen3.5:4b` (about 4 GB).
 3. `USE_DRIVE = True` is set, so Colab asks to mount Google Drive, and results and traces are cached under `MyDrive/ML/2026-10-deep-agents-context-rot/`. A rerun after a disconnect skips finished questions. Set it to `False` to cache under `outputs/` in the Colab session instead.
 4. Optional: set `SMOKE_N = 1` in the Config cell first for a quick end-to-end check (one question per level, separate cache). Set `RUN_SUBAGENT_ARM = True` for arm 6.
-5. Expect roughly 1.5 hours on a T4 for the five default arms. If arms 1–4 are already cached on Drive, a rerun only runs arm 5 (about 15–20 minutes). The last cell zips and downloads all results.
-6. Commit `figures/`, `questions.csv`, `results.csv`, `summary.csv` and `accuracy_by_level.csv`.
+5. Expect roughly 1.5 hours on a T4 for Part 1's five default arms, and roughly 2 hours for Part 2, which has many more model calls per question. Cached runs are skipped, so if Part 1 is already on Drive, a rerun only runs Part 2. `RUN_PART1` and `RUN_PART2` in the Config cell switch either part off. The last cell zips and downloads all results.
+6. Commit `figures/` and the CSVs: `questions.csv`, `results.csv`, `summary.csv`, `accuracy_by_level.csv`, plus Part 2's `questions_part2.csv`, `results_part2.csv`, `summary_part2.csv`, `accuracy_by_level_part2.csv` and `summary_fidelity.csv`.
 
 No API keys are needed; everything runs locally.
 
