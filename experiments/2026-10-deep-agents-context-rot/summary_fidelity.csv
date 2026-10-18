@@ -1,0 +1,52 @@
+arm,qid,summary_no,summarised,kept,wrong,dropped
+S2 summary at 85%,s50_00,1,0,0,0,0
+S2 summary at 85%,s50_01,1,0,0,0,0
+S3 summary at 50%,s30_00,1,0,0,0,0
+S3 summary at 50%,s30_01,1,0,0,0,0
+S3 summary at 50%,s30_02,1,0,0,0,0
+S3 summary at 50%,s30_03,1,0,0,0,0
+S3 summary at 50%,s50_00,1,0,0,0,0
+S3 summary at 50%,s50_01,1,0,0,0,0
+S4 85% + keep-numbers prompt,s50_00,1,0,0,0,0
+S4 85% + keep-numbers prompt,s50_01,1,0,0,0,0
+"S2b 85%, untrimmed",s30_05,1,24,22,0,2
+"S2b 85%, untrimmed",s50_00,1,0,0,0,0
+"S2b 85%, untrimmed",s50_01,1,0,0,0,0
+"S2b 85%, untrimmed",s50_02,1,0,0,0,0
+"S2b 85%, untrimmed",s50_03,1,29,16,0,13
+"S2b 85%, untrimmed",s50_04,1,29,26,0,3
+"S2b 85%, untrimmed",s50_04,2,35,28,0,7
+"S2b 85%, untrimmed",s50_05,1,29,10,0,19
+"S2b 85%, untrimmed",s50_05,2,40,21,0,19
+"S2b 85%, untrimmed",s50_05,3,44,21,0,23
+"S2b 85%, untrimmed",s50_05,4,47,33,0,14
+"S2b 85%, untrimmed",s50_05,5,49,39,0,10
+"S3b 50%, untrimmed",s30_00,1,0,0,0,0
+"S3b 50%, untrimmed",s30_01,1,0,0,0,0
+"S3b 50%, untrimmed",s30_02,1,0,0,0,0
+"S3b 50%, untrimmed",s30_03,1,0,0,0,0
+"S3b 50%, untrimmed",s30_04,1,9,9,0,0
+"S3b 50%, untrimmed",s30_04,2,19,19,0,0
+"S3b 50%, untrimmed",s30_05,1,9,9,0,0
+"S3b 50%, untrimmed",s30_05,2,19,11,0,8
+"S3b 50%, untrimmed",s30_05,3,28,8,0,20
+"S3b 50%, untrimmed",s30_05,4,30,6,0,24
+"S3b 50%, untrimmed",s30_05,5,30,6,0,24
+"S3b 50%, untrimmed",s50_00,1,0,0,0,0
+"S3b 50%, untrimmed",s50_01,1,14,14,0,0
+"S3b 50%, untrimmed",s50_01,2,29,29,0,0
+"S3b 50%, untrimmed",s50_01,3,42,42,0,0
+"S3b 50%, untrimmed",s50_02,1,0,0,0,0
+"S3b 50%, untrimmed",s50_03,1,9,9,0,0
+"S3b 50%, untrimmed",s50_04,1,14,7,0,7
+"S3b 50%, untrimmed",s50_05,1,9,9,0,0
+"S3b 50%, untrimmed",s50_05,2,19,19,0,0
+"S3b 50%, untrimmed",s50_05,3,29,29,0,0
+"S3b 50%, untrimmed",s50_05,4,39,39,0,0
+"S4b keep-numbers, untrimmed",s30_05,1,19,19,0,0
+"S4b keep-numbers, untrimmed",s50_00,1,29,29,0,0
+"S4b keep-numbers, untrimmed",s50_01,1,0,0,0,0
+"S4b keep-numbers, untrimmed",s50_02,1,0,0,0,0
+"S4b keep-numbers, untrimmed",s50_03,1,29,29,0,0
+"S4b keep-numbers, untrimmed",s50_04,1,29,29,0,0
+"S4b keep-numbers, untrimmed",s50_05,1,29,7,0,22

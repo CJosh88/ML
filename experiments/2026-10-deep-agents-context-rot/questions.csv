@@ -1,0 +1,25 @@
+qid,k,kind,question,gold_entity,gold_value
+k1_00,1,A,"By how much did Portugal's energy per capita (kWh per person) change between 2006 and 2021? Give 2021 minus 2006, with the country as the name.",Portugal,-2468.0
+k1_01,1,A,"By how much did Philippines's total ghg (million tonnes CO2-equivalent) change between 2004 and 2023? Give 2023 minus 2004, with the country as the name.",Philippines,102.8
+k1_02,1,A,"By how much did Spain's gas co2 (million tonnes CO2) change between 2004 and 2009? Give 2009 minus 2004, with the country as the name.",Spain,15.0
+k1_03,1,A,"By how much did Brazil's co2 per capita (tonnes CO2 per person) change between 2006 and 2016? Give 2016 minus 2006, with the country as the name.",Brazil,0.44
+k1_04,1,B,"In which year between 2004 and 2023 was Philippines's co2 per capita (tonnes CO2 per person) highest, and what was it? Give the year as the name.",2023,1.4
+k1_05,1,B,"In which year between 2004 and 2023 was Poland's gas co2 (million tonnes CO2) highest, and what was it? Give the year as the name.",2021,39.7
+k1_06,1,B,"In which year between 2004 and 2023 was Saudi Arabia's methane (million tonnes CO2-equivalent) highest, and what was it? Give the year as the name.",2022,117.0
+k1_07,1,B,"In which year between 2004 and 2023 was Peru's coal co2 (million tonnes CO2) highest, and what was it? Give the year as the name.",2007,3.6
+k3_00,3,A,"Of Tajikistan, Australia and United States, which had the highest total ghg (million tonnes CO2-equivalent) in 2019, and what was the value?",United States,6361.0
+k3_01,3,A,"Of Japan, Romania and Mozambique, which had the highest energy per capita (kWh per person) in 2017, and what was the value?",Japan,42138.0
+k3_02,3,A,"Of United States, Afghanistan and South Korea, which had the highest total ghg (million tonnes CO2-equivalent) in 2021, and what was the value?",United States,6131.0
+k3_03,3,A,"Of Tajikistan, Germany and Tanzania, which had the highest share global co2 (% of world CO2) in 2021, and what was the value?",Germany,1.84
+k3_04,3,B,"Of Greece, Mexico and Colombia, which had the largest increase in energy per capita (kWh per person) between 2007 and 2014, and how big was that increase (2014 minus 2007)?",Colombia,1892.0
+k3_05,3,B,"Of Nigeria, Tajikistan and Cuba, which had the largest increase in nitrous oxide (million tonnes CO2-equivalent) between 2004 and 2012, and how big was that increase (2012 minus 2004)?",Nigeria,6.2
+k3_06,3,B,"Of United Arab Emirates, Saudi Arabia and Nigeria, which had the largest increase in total ghg (million tonnes CO2-equivalent) between 2007 and 2013, and how big was that increase (2013 minus 2007)?",Saudi Arabia,174.0
+k3_07,3,B,"Of Tanzania, Pakistan and Vietnam, which had the largest increase in cement co2 (million tonnes CO2) between 2009 and 2021, and how big was that increase (2021 minus 2009)?",Vietnam,42.9
+k5_00,5,A,"Of Netherlands, Algeria, Canada, Italy and Uzbekistan, which had the highest co2 (million tonnes CO2) in 2023, and what was the value?",Canada,545.5
+k5_01,5,A,"Of Tanzania, Chile, South Africa, Myanmar and Philippines, which had the highest nitrous oxide (million tonnes CO2-equivalent) in 2021, and what was the value?",Tanzania,24.7
+k5_02,5,A,"Of United States, Romania, Mexico, Democratic Republic of Congo and Peru, which had the highest coal co2 (million tonnes CO2) in 2020, and what was the value?",United States,853.9
+k5_03,5,A,"Of Egypt, Dominican Republic, Bangladesh, Iran and Algeria, which had the highest total ghg (million tonnes CO2-equivalent) in 2018, and what was the value?",Iran,877.0
+k5_04,5,B,"Of Portugal, Dominican Republic, Afghanistan, Bangladesh and Sweden, which had the largest increase in primary energy consumption (TWh) between 2011 and 2021, and how big was that increase (2021 minus 2011)?",Bangladesh,220.9
+k5_05,5,B,"Of Bangladesh, Venezuela, Argentina, United States and Iran, which had the largest increase in energy per capita (kWh per person) between 2005 and 2011, and how big was that increase (2011 minus 2005)?",Iran,5572.0
+k5_06,5,B,"Of Turkey, Malaysia, Czechia, Brazil and South Africa, which had the largest increase in nitrous oxide (million tonnes CO2-equivalent) between 2011 and 2019, and how big was that increase (2019 minus 2011)?",Brazil,15.2
+k5_07,5,B,"Of South Korea, Senegal, Brazil, Australia and Kazakhstan, which had the largest increase in methane (million tonnes CO2-equivalent) between 2005 and 2018, and how big was that increase (2018 minus 2005)?",Brazil,24.4

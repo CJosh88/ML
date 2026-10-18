@@ -1,0 +1,8 @@
+arm,accuracy,acc_95ci,accuracy_strict,format_misses,runs_over_window,peak_sent_median,calls_mean,summaries_mean,compactions_mean,fallbacks_mean,read_file_mean,grep_mean,wall_s_median,no_answer
+1 plain loop,0.542,0.35-0.72,0.542,0,0.333,12797.5,2.0,0.0,0.0,0.0,0.0,0.0,15.99,0.167
+"2 deep agents, off",0.625,0.43-0.79,0.5,3,0.333,12799.0,2.0,0.0,0.0,0.0,0.0,0.0,16.621,0.25
+3 + offloading,0.75,0.55-0.88,0.333,10,0.0,5297.5,6.0,0.0,0.0,0.0,3.708,2.292,27.303,0.542
+4 + offload + summary,0.792,0.60-0.91,0.458,8,0.0,4747.0,4.417,0.0,0.125,0.125,3.333,3.375,25.084,0.417
+5 + offload + early summary,0.792,0.60-0.91,0.542,6,0.0,4233.0,6.375,0.167,0.333,0.167,2.375,3.833,23.052,0.333
+"4b + offload + summary, untrimmed",0.917,0.74-0.98,0.625,7,0.0,4681.5,6.333,0.083,0.083,0.0,3.458,3.25,20.754,0.25
+"5b + offload + early summary, untrimmed",0.917,0.74-0.98,0.625,7,0.0,4705.0,6.542,0.417,0.333,0.0,2.958,4.375,24.549,0.333

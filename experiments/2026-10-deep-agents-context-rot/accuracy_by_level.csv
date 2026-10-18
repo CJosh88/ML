@@ -1,0 +1,8 @@
+arm,acc_1_countries,acc_3_countries,acc_5_countries,strict_1_countries,strict_3_countries,strict_5_countries
+1 plain loop,0.625,1.0,0.0,0.625,1.0,0.0
+"2 deep agents, off",0.875,1.0,0.0,0.625,0.875,0.0
+3 + offloading,0.75,1.0,0.5,0.625,0.25,0.125
+4 + offload + summary,0.75,1.0,0.625,0.625,0.375,0.375
+"4b + offload + summary, untrimmed",0.875,1.0,0.875,0.625,0.625,0.625
+5 + offload + early summary,0.875,0.875,0.625,0.75,0.375,0.5
+"5b + offload + early summary, untrimmed",0.75,1.0,1.0,0.75,0.5,0.625

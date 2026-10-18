@@ -72,4 +72,4 @@ No API keys are needed; everything runs locally.
 
 ## Results
 
-TODO: fill after running
+Results here: [Context rot in a small local agent](https://CJosh88.github.io/ai-portfolio/experiments/2026-10-deep-agents-context-rot/)
