@@ -39,6 +39,7 @@ Every condition is scored against the same lists, including those that never see
 - **B-WER and U-WER** ([Le et al., 2021](https://arxiv.org/abs/2104.02194)): WER on listed words and on all other words, to show whether biasing helps the terms without hurting the rest
 - **Target recall:** the share of target-term occurrences that appear in the transcript
 - **Distractor insertions per 100 utterances:** listed terms the model wrote though nobody in the group said them
+- **Runaway transcripts:** transcripts with more than twice the reference's word count plus 10, usually a repetition loop. These are counted per condition. As a sensitivity check, **WER excl. runaways** drops any utterance that ran away in any condition, so every condition is scored on the same utterances. In the smoke test, one "Yeah. Yeah." turned into more than 100 "yeah"s under Whisper with keywords, which alone moved that condition's WER by about 4 points.
 - **RTFx** (seconds of audio per second of processing) and peak GPU memory on a T4
 - Doctor vs patient channel (PriMock57) and WER by accent (AfriSpeech)
 - 95% intervals from a bootstrap that resamples whole consultations or speakers, plus paired differences for B vs A, E vs D, D vs A, C vs A and E vs B
