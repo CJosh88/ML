@@ -1,0 +1,11 @@
+# Colab already includes torch, torchaudio, pandas, numpy, matplotlib, tqdm, librosa and soundfile.
+# The notebook installs the pinned packages below. Model revisions and the PriMock57 commit are pinned in its Config cell.
+transformers==5.20.2
+jiwer==4.0.0
+wordfreq==3.1.1
+librosa
+soundfile
+pandas
+numpy
+matplotlib
+tqdm
