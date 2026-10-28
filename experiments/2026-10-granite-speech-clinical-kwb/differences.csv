@@ -1,0 +1,31 @@
+dataset,comparison,metric,difference,95% CI,CI excludes 0
+primock57,"B − A (keywords, Whisper)",WER,0.008535653791225228,0.0038 to 0.0137,True
+primock57,"B − A (keywords, Whisper)",B-WER,-0.30528052805280526,-0.352 to -0.259,True
+primock57,"B − A (keywords, Whisper)",U-WER,0.011725827014695045,0.0073 to 0.0166,True
+primock57,"B − A (keywords, Whisper)",target recall,0.3085808580858086,0.262 to 0.356,True
+primock57,"B − A (keywords, Whisper)",distractor ins / 100 utts,0.15521064301552107,0.0467 to 0.264,True
+primock57,"B − A (keywords, Whisper)",WER excl. runaways,0.008535653791225228,0.0038 to 0.0137,True
+primock57,"E − D (keywords, Granite 2B)",WER,-0.0015111760603141872,-0.00325 to 0.000278,False
+primock57,"E − D (keywords, Granite 2B)",B-WER,-0.16171617161716173,-0.2 to -0.127,True
+primock57,"E − D (keywords, Granite 2B)",U-WER,0.00011742602160638715,-0.00153 to 0.0018,False
+primock57,"E − D (keywords, Granite 2B)",target recall,0.18646864686468656,0.152 to 0.223,True
+primock57,"E − D (keywords, Granite 2B)",distractor ins / 100 utts,0.3325942350332594,0.152 to 0.552,True
+primock57,"E − D (keywords, Granite 2B)",WER excl. runaways,-0.0015111760603141872,-0.00325 to 0.000278,False
+primock57,D − A (Granite 2B vs Whisper),WER,-0.056810256069613735,-0.0634 to -0.0501,True
+primock57,D − A (Granite 2B vs Whisper),B-WER,-0.14026402640264024,-0.181 to -0.0989,True
+primock57,D − A (Granite 2B vs Whisper),U-WER,-0.055961886868415744,-0.0625 to -0.0492,True
+primock57,D − A (Granite 2B vs Whisper),target recall,0.14191419141914186,0.102 to 0.182,True
+primock57,D − A (Granite 2B vs Whisper),distractor ins / 100 utts,-0.022172949002217297,-0.0694 to 0,False
+primock57,D − A (Granite 2B vs Whisper),WER excl. runaways,-0.056810256069613735,-0.0634 to -0.0501,True
+primock57,C − A (Turbo CTC vs Whisper),WER,-0.03550433425221694,-0.04 to -0.0307,True
+primock57,C − A (Turbo CTC vs Whisper),B-WER,-0.09900990099009899,-0.129 to -0.0677,True
+primock57,C − A (Turbo CTC vs Whisper),U-WER,-0.03485875327115345,-0.0393 to -0.0301,True
+primock57,C − A (Turbo CTC vs Whisper),target recall,0.1006600660066006,0.0711 to 0.129,True
+primock57,C − A (Turbo CTC vs Whisper),distractor ins / 100 utts,-0.022172949002217297,-0.0694 to 0,False
+primock57,C − A (Turbo CTC vs Whisper),WER excl. runaways,-0.03550433425221694,-0.04 to -0.0307,True
+primock57,E − B (both with keywords),WER,-0.06685708592115315,-0.0747 to -0.0594,True
+primock57,E − B (both with keywords),B-WER,0.0033003300330032848,-0.0247 to 0.034,False
+primock57,E − B (both with keywords),U-WER,-0.0675702878615044,-0.0755 to -0.0601,True
+primock57,E − B (both with keywords),target recall,0.01980198019801982,-0.00839 to 0.0468,False
+primock57,E − B (both with keywords),distractor ins / 100 utts,0.15521064301552104,-0.0664 to 0.396,False
+primock57,E − B (both with keywords),WER excl. runaways,-0.06685708592115315,-0.0747 to -0.0594,True
