@@ -1,0 +1,14 @@
+# Colab already includes torch, numpy, pandas, scipy, scikit-learn, matplotlib, jinja2, pyyaml, tqdm and huggingface-hub.
+# The notebook installs the pinned packages below. Versions checked on 1 November 2026.
+transformers==5.22.1
+sentence-transformers==6.2.0
+datasets==5.1.0
+accelerate==1.15.0
+jinja2
+pyyaml
+scikit-learn
+scipy
+pandas
+numpy
+matplotlib
+tqdm
