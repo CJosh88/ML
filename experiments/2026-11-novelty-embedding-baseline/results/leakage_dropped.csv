@@ -1,0 +1,97 @@
+embedder,key,idea_title,corpus_title,cos,reason
+bge-small,532dac2689ec3bce,Learning from Peers in Reasoning Models,Learning from Peers in Reasoning Models,0.987,id/title match
+bge-small,e7809b4fdf4f3844,The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm,The Polar Express: Optimal Matrix Sign Methods and Their Application to the Muon Algorithm,0.992,id/title match
+bge-small,6aa706c7d4f002d7,Image Quality Assessment for Embodied AI,Perceptual Quality Assessment for Embodied AI,0.999,cos >= 0.95
+bge-small,d0cae9275a004c63,TIIF-Bench: How Does Your T2I Model Follow Your Instructions?,TIIF-Bench: How Does Your T2I Model Follow Your Instructions?,0.988,id/title match
+bge-small,4d84ae462e244a35,LLM Pretraining with Continuous Concepts,LLM Pretraining with Continuous Concepts,0.995,id/title match
+bge-small,00a9d72539a3e2b9,Harnessing Large Language Models Locally: Empirical Results and Implications,Harnessing Large Language Models Locally: Empirical Results and Implications for AI PC,0.999,cos >= 0.95
+bge-small,a5878438fa5e260d,UAVDB: Point-Guided Masks for UAV Detection and Segmentation,UAVDB: Trajectory-Guided Adaptable Bounding Boxes for UAV Detection,0.954,cos >= 0.95
+bge-small,67b2d10055fdf1dc,OCR-Reasoning Benchmark: Unveiling the True Capabilities of MLLMs in Complex Text-Rich Image Reasoning,OCR-Reasoning Benchmark: Unveiling the True Capabilities of MLLMs in Complex Text-Rich Image Reasoning,0.995,id/title match
+bge-small,0119c841d943aeeb,LLMs Get Lost In Multi-Turn Conversation,LLMs Get Lost In Multi-Turn Conversation,0.999,id/title match
+bge-small,0119c841d943aeeb,LLMs Get Lost In Multi-Turn Conversation,MT-Eval: A Multi-Turn Capabilities Evaluation Benchmark for Large Language Models,0.951,cos >= 0.95
+bge-small,b4cb243a132ed21f,AudioTrust: Benchmarking The Multifaceted Trustworthiness of Audio Large Language Models,AudioTrust: Benchmarking the Multifaceted Trustworthiness of Audio Large Language Models,0.983,id/title match
+bge-small,d16030a826f92ade,OmniSTVG: Toward Spatio-Temporal Omni-Object Video Grounding,OmniSTVG: Toward Spatio-Temporal Omni-Object Video Grounding,0.997,id/title match
+bge-small,d881d50c79272675,From Charts to Code: A Hierarchical Benchmark for Multimodal Models,ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation,0.958,cos >= 0.95
+bge-small,aadc4c9377d22dbb,Evolutionary Caching to Accelerate Your Off-the-Shelf Diffusion Model,Evolutionary Caching to Accelerate Your Off-the-Shelf Diffusion Model,0.977,id/title match
+bge-small,349f3ed95333fab7,Half-order Fine-Tuning for Diffusion Model: A Recursive Likelihood Ratio Optimizer,Zeroth-order Informed Fine-Tuning for Diffusion Model: A Recursive Likelihood Ratio Optimizer,0.99,cos >= 0.95
+bge-small,1a6395342f925d50,LLM-Based Social Simulations Require a Boundary,LLM-Based Social Simulations Require a Boundary,0.999,id/title match
+bge-small,5384e283c867e6d4,Diffusion Blend: Inference-Time Multi-Preference Alignment for Diffusion Models,Diffusion Blend: Inference-Time Multi-Preference Alignment for Diffusion Models,0.997,id/title match
+bge-small,dcf09a481993f244,Rethinking Diffusion Model in High Dimension,Rethinking Diffusion Model in High Dimension,0.985,id/title match
+bge-small,b8f14dc83174b46a,Panda: A pretrained forecast model for chaotic dynamics,Panda: A pretrained forecast model for universal representation of chaotic dynamics,0.997,cos >= 0.95
+bge-small,f2eb1c1da0e607a4,Conjuring Semantic Similarity,Conjuring Semantic Similarity,0.995,id/title match
+bge-small,c298d85b2cbf8749,Human Aligned Compression for Robust Models,Human Aligned Compression for Robust Models,0.982,id/title match
+bge-small,c08159d677f9bb6d,Hot PATE: Private Aggregation of Distributions  for Diverse Tasks,Hot PATE: Private Aggregation of Distributions for Diverse Task,0.98,cos >= 0.95
+bge-small,ec65fb636979550c,Memorization or Interpolation? Detecting LLM Memorization through Input Perturbation Analysis,Memorization or Interpolation ? Detecting LLM Memorization through Input Perturbation Analysis,0.946,id/title match
+bge-small,1da80650aa33f0e7,How Do Transformers Perform Two-Hop Reasoning in Context?,How Do LLMs Perform Two-Hop Reasoning in Context?,0.965,cos >= 0.95
+bge-small,b61de26bc00903f1,SEM: Reinforcement Learning For Search-Efficient Large Language Models,SEM: Reinforcement Learning for Search-Efficient Large Language Models,0.999,id/title match
+bge-small,ede47d2fe9a7c39c,Numerical Sensitivity and Robustness: Exploring the Flaws of Mathematical Reasoning in Large Language Models,Exploring LLM Reasoning Through Controlled Prompt Variations,0.95,cos >= 0.95
+bge-small,0d11c49a22af2aa6,Control Tax: The Price of Keeping AI in Check,Control Tax: The Price of Keeping AI in Check,0.997,id/title match
+bge-small,97e747958828d8aa,Erased but Not Forgotten: How Backdoors Compromise Concept Erasure,Erased but Not Forgotten: How Backdoors Compromise Concept Erasure,0.98,id/title match
+bge-small,e216f651a7899bc5,NoLoRA: Nonlinear Low-Rank Adaptation for Parameter-Efficient Fine-Tuning,Sparse Low-rank Adaptation of Pre-trained Language Models,0.951,cos >= 0.95
+bge-small,76cc2163a47e69d8,Neural Graduated Assignment for Maximum Common Edge Subgraphs,Neural Graduated Assignment for Maximum Common Edge Subgraphs,0.989,id/title match
+bge-small,aeb965cfe05e3979,Discovering and Steering Interpretable Concepts in Large Generative Music Models,Discovering Interpretable Concepts in Large Generative Music Models,0.988,cos >= 0.95
+bge-small,ce2bdaa28c1b11c8,Surpassing Cosine Similarity  for Multidimensional Comparisons:  Dimension Insensitive Euclidean Metric,Surpassing Cosine Similarity for Multidimensional Comparisons: Dimension Insensitive Euclidean Metric,0.985,id/title match
+bge-small,8eef0e3c186a6e11,Structural Inference: Interpreting Small Language Models with Susceptibilities,Structural Inference: Interpreting Small Language Models with Susceptibilities,1.0,id/title match
+bge-small,b778544ae4da834c,Towards Understanding the Nature of Attention with Low-Rank Sparse Decomposition,Towards Understanding the Nature of Attention with Low-Rank Sparse Decomposition,0.982,id/title match
+bge-small,877cedd603d45e9c,Plan-R1: Safe and Feasible Trajectory Planning as Language Modeling,Plan-R1: Safe and Feasible Trajectory Planning as Language Modeling,0.958,id/title match
+bge-small,6103af980f4e378b,Modern Hopfield Networks Cannot Solve $\mathsf{NC}^1$-Hard Problems,On the Expressive Power of Modern Hopfield Networks,1.001,cos >= 0.95
+bge-small,f91ff48348e73f9c,Two failure modes of deep transformers and how to avoid them: a unified theory of signal propagation at initialisation,Two failure modes of deep transformers and how to avoid them: a unified theory of signal propagation at initialisation,0.974,id/title match
+bge-small,d276667b577eeccb,STADE: Standard Deviation as a Pruning Metric,STADE: Standard Deviation as a Pruning Metric,0.993,id/title match
+bge-small,f531e3a1b3edfd09,MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs,Delta Decompression for MoE-based LLMs Compression,0.95,cos >= 0.95
+bge-small,101b785ee937183a,On the Wasserstein Geodesic Principal Component Analysis of probability measures,On the Wasserstein Geodesic Principal Component Analysis of probability measures,0.996,id/title match
+bge-small,9f679da40aa99106,Token-Importance Guided Direct Preference Optimization,Token-Importance Guided Direct Preference Optimization,0.963,id/title match
+bge-small,59f35bee2615d8f1,How to Square Tensor Networks and Circuits Without Squaring Them,On Faster Marginalization with Squared Circuits via Orthonormalization,0.97,cos >= 0.95
+bge-small,7a15f2415e5c6cf8,Temporal-Oriented Recipe for Transferring Large Vision-Language Model to Video Understanding,Temporal-Oriented Recipe for Transferring Large Vision-Language Model to Video Understanding,0.998,id/title match
+bge-small,e4a56ab411cfd560,FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management,FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management,0.996,id/title match
+bge-small,5605020c92ee94f4,QVGen: Pushing the Limit of Quantized Video Generative Models,QVGen: Pushing the Limit of Quantized Video Generative Models,0.999,id/title match
+bge-small,68d8d49fba293fbf,SoLoPO: Unlocking Long-Context Capabilities in LLMs via Short-to-Long Preference Optimization,SoLoPO: Unlocking Long-Context Capabilities in LLMs via Short-to-Long Preference Optimization,0.993,id/title match
+bge-small,3e018ab3c1cffa9f,Adaptable Symbolic Music Infilling with MIDI-RWKV,Personalizable Long-Context Symbolic Music Infilling with MIDI-RWKV,0.97,cos >= 0.95
+bge-small,b36a68343f103562,TiViT: Time Series Representations Lie Hidden in Pretrained Vision Transformers,Time Series Representations for Classification Lie Hidden in Pretrained Vision Transformers,0.982,cos >= 0.95
+bge-m3,532dac2689ec3bce,Learning from Peers in Reasoning Models,Learning from Peers in Reasoning Models,0.948,id/title match
+bge-m3,e7809b4fdf4f3844,The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm,The Polar Express: Optimal Matrix Sign Methods and Their Application to the Muon Algorithm,0.94,id/title match
+bge-m3,6aa706c7d4f002d7,Image Quality Assessment for Embodied AI,Perceptual Quality Assessment for Embodied AI,0.99,cos >= 0.95
+bge-m3,d0cae9275a004c63,TIIF-Bench: How Does Your T2I Model Follow Your Instructions?,TIIF-Bench: How Does Your T2I Model Follow Your Instructions?,0.977,id/title match
+bge-m3,4d84ae462e244a35,LLM Pretraining with Continuous Concepts,LLM Pretraining with Continuous Concepts,0.989,id/title match
+bge-m3,00a9d72539a3e2b9,Harnessing Large Language Models Locally: Empirical Results and Implications,Harnessing Large Language Models Locally: Empirical Results and Implications for AI PC,0.986,cos >= 0.95
+bge-m3,a5878438fa5e260d,UAVDB: Point-Guided Masks for UAV Detection and Segmentation,UAVDB: Trajectory-Guided Adaptable Bounding Boxes for UAV Detection,0.907,near-copy for an earlier model
+bge-m3,67b2d10055fdf1dc,OCR-Reasoning Benchmark: Unveiling the True Capabilities of MLLMs in Complex Text-Rich Image Reasoning,OCR-Reasoning Benchmark: Unveiling the True Capabilities of MLLMs in Complex Text-Rich Image Reasoning,0.964,id/title match
+bge-m3,0119c841d943aeeb,LLMs Get Lost In Multi-Turn Conversation,LLMs Get Lost In Multi-Turn Conversation,0.994,id/title match
+bge-m3,0119c841d943aeeb,LLMs Get Lost In Multi-Turn Conversation,MT-Eval: A Multi-Turn Capabilities Evaluation Benchmark for Large Language Models,0.822,near-copy for an earlier model
+bge-m3,b4cb243a132ed21f,AudioTrust: Benchmarking The Multifaceted Trustworthiness of Audio Large Language Models,AudioTrust: Benchmarking the Multifaceted Trustworthiness of Audio Large Language Models,0.957,id/title match
+bge-m3,d16030a826f92ade,OmniSTVG: Toward Spatio-Temporal Omni-Object Video Grounding,OmniSTVG: Toward Spatio-Temporal Omni-Object Video Grounding,0.986,id/title match
+bge-m3,d881d50c79272675,From Charts to Code: A Hierarchical Benchmark for Multimodal Models,ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation,0.825,near-copy for an earlier model
+bge-m3,aadc4c9377d22dbb,Evolutionary Caching to Accelerate Your Off-the-Shelf Diffusion Model,Evolutionary Caching to Accelerate Your Off-the-Shelf Diffusion Model,0.973,id/title match
+bge-m3,349f3ed95333fab7,Half-order Fine-Tuning for Diffusion Model: A Recursive Likelihood Ratio Optimizer,Zeroth-order Informed Fine-Tuning for Diffusion Model: A Recursive Likelihood Ratio Optimizer,0.942,near-copy for an earlier model
+bge-m3,1a6395342f925d50,LLM-Based Social Simulations Require a Boundary,LLM-Based Social Simulations Require a Boundary,0.992,id/title match
+bge-m3,5384e283c867e6d4,Diffusion Blend: Inference-Time Multi-Preference Alignment for Diffusion Models,Diffusion Blend: Inference-Time Multi-Preference Alignment for Diffusion Models,0.977,id/title match
+bge-m3,dcf09a481993f244,Rethinking Diffusion Model in High Dimension,Rethinking Diffusion Model in High Dimension,0.963,id/title match
+bge-m3,b8f14dc83174b46a,Panda: A pretrained forecast model for chaotic dynamics,Panda: A pretrained forecast model for universal representation of chaotic dynamics,0.989,cos >= 0.95
+bge-m3,f2eb1c1da0e607a4,Conjuring Semantic Similarity,Conjuring Semantic Similarity,0.961,id/title match
+bge-m3,c298d85b2cbf8749,Human Aligned Compression for Robust Models,Human Aligned Compression for Robust Models,0.951,id/title match
+bge-m3,c08159d677f9bb6d,Hot PATE: Private Aggregation of Distributions  for Diverse Tasks,Hot PATE: Private Aggregation of Distributions for Diverse Task,0.961,cos >= 0.95
+bge-m3,ec65fb636979550c,Memorization or Interpolation? Detecting LLM Memorization through Input Perturbation Analysis,Memorization or Interpolation ? Detecting LLM Memorization through Input Perturbation Analysis,0.928,id/title match
+bge-m3,1da80650aa33f0e7,How Do Transformers Perform Two-Hop Reasoning in Context?,How Do LLMs Perform Two-Hop Reasoning in Context?,0.915,near-copy for an earlier model
+bge-m3,b61de26bc00903f1,SEM: Reinforcement Learning For Search-Efficient Large Language Models,SEM: Reinforcement Learning for Search-Efficient Large Language Models,0.976,id/title match
+bge-m3,ede47d2fe9a7c39c,Numerical Sensitivity and Robustness: Exploring the Flaws of Mathematical Reasoning in Large Language Models,Exploring LLM Reasoning Through Controlled Prompt Variations,0.85,near-copy for an earlier model
+bge-m3,0d11c49a22af2aa6,Control Tax: The Price of Keeping AI in Check,Control Tax: The Price of Keeping AI in Check,0.995,id/title match
+bge-m3,97e747958828d8aa,Erased but Not Forgotten: How Backdoors Compromise Concept Erasure,Erased but Not Forgotten: How Backdoors Compromise Concept Erasure,0.938,id/title match
+bge-m3,e216f651a7899bc5,NoLoRA: Nonlinear Low-Rank Adaptation for Parameter-Efficient Fine-Tuning,Sparse Low-rank Adaptation of Pre-trained Language Models,0.83,near-copy for an earlier model
+bge-m3,76cc2163a47e69d8,Neural Graduated Assignment for Maximum Common Edge Subgraphs,Neural Graduated Assignment for Maximum Common Edge Subgraphs,0.98,id/title match
+bge-m3,aeb965cfe05e3979,Discovering and Steering Interpretable Concepts in Large Generative Music Models,Discovering Interpretable Concepts in Large Generative Music Models,0.955,cos >= 0.95
+bge-m3,ce2bdaa28c1b11c8,Surpassing Cosine Similarity  for Multidimensional Comparisons:  Dimension Insensitive Euclidean Metric,Surpassing Cosine Similarity for Multidimensional Comparisons: Dimension Insensitive Euclidean Metric,0.995,id/title match
+bge-m3,8eef0e3c186a6e11,Structural Inference: Interpreting Small Language Models with Susceptibilities,Structural Inference: Interpreting Small Language Models with Susceptibilities,1.0,id/title match
+bge-m3,b778544ae4da834c,Towards Understanding the Nature of Attention with Low-Rank Sparse Decomposition,Towards Understanding the Nature of Attention with Low-Rank Sparse Decomposition,0.943,id/title match
+bge-m3,877cedd603d45e9c,Plan-R1: Safe and Feasible Trajectory Planning as Language Modeling,Plan-R1: Safe and Feasible Trajectory Planning as Language Modeling,0.889,id/title match
+bge-m3,6103af980f4e378b,Modern Hopfield Networks Cannot Solve $\mathsf{NC}^1$-Hard Problems,On the Expressive Power of Modern Hopfield Networks,0.996,cos >= 0.95
+bge-m3,f91ff48348e73f9c,Two failure modes of deep transformers and how to avoid them: a unified theory of signal propagation at initialisation,Two failure modes of deep transformers and how to avoid them: a unified theory of signal propagation at initialisation,0.944,id/title match
+bge-m3,d276667b577eeccb,STADE: Standard Deviation as a Pruning Metric,STADE: Standard Deviation as a Pruning Metric,0.984,id/title match
+bge-m3,f531e3a1b3edfd09,MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs,Delta Decompression for MoE-based LLMs Compression,0.841,near-copy for an earlier model
+bge-m3,101b785ee937183a,On the Wasserstein Geodesic Principal Component Analysis of probability measures,On the Wasserstein Geodesic Principal Component Analysis of probability measures,0.985,id/title match
+bge-m3,9f679da40aa99106,Token-Importance Guided Direct Preference Optimization,Token-Importance Guided Direct Preference Optimization,0.943,id/title match
+bge-m3,59f35bee2615d8f1,How to Square Tensor Networks and Circuits Without Squaring Them,On Faster Marginalization with Squared Circuits via Orthonormalization,0.933,near-copy for an earlier model
+bge-m3,7a15f2415e5c6cf8,Temporal-Oriented Recipe for Transferring Large Vision-Language Model to Video Understanding,Temporal-Oriented Recipe for Transferring Large Vision-Language Model to Video Understanding,0.996,id/title match
+bge-m3,e4a56ab411cfd560,FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management,FlowKV: Enhancing Multi-Turn Conversational Coherence in LLMs via Isolated Key-Value Cache Management,0.991,id/title match
+bge-m3,5605020c92ee94f4,QVGen: Pushing the Limit of Quantized Video Generative Models,QVGen: Pushing the Limit of Quantized Video Generative Models,0.978,id/title match
+bge-m3,68d8d49fba293fbf,SoLoPO: Unlocking Long-Context Capabilities in LLMs via Short-to-Long Preference Optimization,SoLoPO: Unlocking Long-Context Capabilities in LLMs via Short-to-Long Preference Optimization,0.981,id/title match
+bge-m3,3e018ab3c1cffa9f,Adaptable Symbolic Music Infilling with MIDI-RWKV,Personalizable Long-Context Symbolic Music Infilling with MIDI-RWKV,0.938,near-copy for an earlier model
+bge-m3,b36a68343f103562,TiViT: Time Series Representations Lie Hidden in Pretrained Vision Transformers,Time Series Representations for Classification Lie Hidden in Pretrained Vision Transformers,0.978,cos >= 0.95

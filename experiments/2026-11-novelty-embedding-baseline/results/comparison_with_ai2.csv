@@ -1,0 +1,33 @@
+split,condition,source,pair_strict,point_f1_binary,point_f1_cv
+Human-Only,"Yin (min distance), bge-small",this notebook,0.512987012987013,,0.5479893842174219
+Human-Only,"kNN density (k=10), bge-small",this notebook,0.487012987012987,,0.5113553113553113
+Human-Only,"RND, bge-small",this notebook,0.5714285714285714,,0.5634546271338724
+Human-Only,"Yin (min distance), bge-m3",this notebook,0.6038961038961039,,0.5760869565217391
+Human-Only,"kNN density (k=10), bge-m3",this notebook,0.5844155844155844,,0.5470780515028303
+Human-Only,"RND, bge-m3",this notebook,0.551948051948052,,0.5641203911366287
+Human-Only,Qwen2.5-3B judge (reference),this notebook,0.5454545454545454,0.34755727967026306,0.5629100798912119
+Human-Only,Qwen2.5-3B judge (vague_criteria),this notebook,0.577922077922078,0.35506885681101713,0.5899505395683453
+Human-Only,Qwen2.5-3B judge (no_criteria),this notebook,0.5714285714285714,0.39654264654264654,0.617122783160519
+Human-Only,Yin (bge-small) + Qwen2.5-3B judge,this notebook,0.6103896103896104,,0.5163447609850313
+Human+Generated,"Yin (min distance), bge-small",this notebook,0.36363636363636365,,0.41944346825980006
+Human+Generated,"kNN density (k=10), bge-small",this notebook,0.3961038961038961,,0.4019036704549072
+Human+Generated,"RND, bge-small",this notebook,0.474025974025974,,0.4425067470166806
+Human+Generated,"Yin (min distance), bge-m3",this notebook,0.538961038961039,,0.5039627039627039
+Human+Generated,"kNN density (k=10), bge-m3",this notebook,0.525974025974026,,0.5152786885245901
+Human+Generated,"RND, bge-m3",this notebook,0.7142857142857143,,0.600308072122638
+Human+Generated,Qwen2.5-3B judge (reference),this notebook,0.05844155844155844,0.3333333333333333,0.3534581995964193
+Human+Generated,Qwen2.5-3B judge (vague_criteria),this notebook,0.05844155844155844,0.3333333333333333,0.464810317845772
+Human+Generated,Qwen2.5-3B judge (no_criteria),this notebook,0.14285714285714285,0.3318872017353579,0.4232954545454546
+Human+Generated,Yin (bge-small) + Qwen2.5-3B judge,this notebook,0.9415584415584416,,0.7133964383122092
+Human+Generated,Ai2: sonnet-4-5 judge (reference),Ai2 Figure 4,0.396,0.691,
+Human-Only,Ai2: sonnet-4-5 judge (reference),Ai2 Figure 4,0.74,0.607,
+Human+Generated,Ai2: opus-4-5 judge (reference),Ai2 Figure 4,0.63,0.784,
+Human-Only,Ai2: opus-4-5 judge (reference),Ai2 Figure 4,0.792,0.7070000000000001,
+Human+Generated,Ai2: opus-4-6 judge (reference),Ai2 Figure 4,0.8640000000000001,0.889,
+Human-Only,Ai2: opus-4-6 judge (reference),Ai2 Figure 4,0.825,0.805,
+Human+Generated,Ai2: gpt-5.1 judge (reference),Ai2 Figure 4,0.63,0.75,
+Human-Only,Ai2: gpt-5.1 judge (reference),Ai2 Figure 4,0.838,0.752,
+Human+Generated,Ai2: gpt-5.2 judge (reference),Ai2 Figure 4,0.76,0.645,
+Human-Only,Ai2: gpt-5.2 judge (reference),Ai2 Figure 4,0.838,0.644,
+Human+Generated,Ai2: gpt-5.4 judge (reference),Ai2 Figure 4,0.779,0.705,
+Human-Only,Ai2: gpt-5.4 judge (reference),Ai2 Figure 4,0.831,0.6659999999999999,

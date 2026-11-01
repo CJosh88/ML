@@ -1,0 +1,13 @@
+case,pair,side,label,title,rating,yin,nearest_prior,judge_p_this
+"Yin right, judge wrong",3,A,POSITIVE,TNT: Improving Chunkwise Training for Test-Time Memorization,6.67,0.11535573,Optimal Gradient Checkpointing for Sparse and Recurrent Architectures using Off-Chip Memory,0.35573410615324974
+"Yin right, judge wrong",3,B,NEGATIVE,Continuous Control of LLM Text Generation via Probabilistic Prompting,2.67,0.07990277,Locally Typical Sampling,0.6442658938467503
+"Yin right, judge wrong",5,A,POSITIVE,The Unseen Bias: How Norm Discrepancy in Pre-Norm MLLMs Leads to  Visual  Information Loss,6.0,0.081160605,Looking Beyond Language Priors: Enhancing Visual Comprehension and Attention in Multimodal Models,0.4348762258887291
+"Yin right, judge wrong",5,B,NEGATIVE,HSA: Head-wise Sparse Attention for Efficient and Accurate Long-context Inference,2.5,0.076785505,Attention is Naturally Sparse with Gaussian Distributed Input,0.5651237741112709
+"Judge right, Yin wrong",0,A,NEGATIVE,Learning from Peers in Reasoning Models,2.67,0.09784138,Optimizing Length Compression in Large Reasoning Models,0.41337551176548004
+"Judge right, Yin wrong",0,B,POSITIVE,StreamingThinker: Large Language Models Can Think While Reading,6.67,0.0904907,ThinkLess: A Training-Free Inference-Efficient Method for Reducing Reasoning Redundancy,0.58662448823452
+"Judge right, Yin wrong",1,A,POSITIVE,Expanding Reasoning Potential in Foundation Model by Learning Diverse Chains of Thought Patterns,6.5,0.072368145,Mind the Gap: Bridging Thought Leap for Improved Chain-of-Thought Tuning,0.529084138572216
+"Judge right, Yin wrong",1,B,NEGATIVE,AsymPuzl: An asymmetric puzzle for multi-agent cooperation,2.5,0.10332805,Your Co-Workers Matter: Evaluating Collaborative Capabilities of Language Models in Blocks World,0.47091586142778397
+Both wrong,15,A,POSITIVE,MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs,6.67,0.053295672,Demystifying the Compression of Mixture-of-Experts Through a Unified Framework,0.42511993646621704
+Both wrong,15,B,NEGATIVE,Visual Reasoning via Perceptual Extension and In-Context Learning,2.5,0.06460613,The Synergy Dilemma of Long-CoT SFT and RL: Investigating Post-Training Techniques for Reasoning VLMs,0.574880063533783
+Both wrong,20,A,NEGATIVE,"Smooth Gradients, Stable Learning: Logits Convexity for Reinforcement Learning",2.5,0.11349124,CPGD: Toward Stable Rule-based Reinforcement Learning for Language Models,0.5418383330106735
+Both wrong,20,B,POSITIVE,Lipschitz Bandits with Stochastic Delayed Feedback,6.5,0.08330464,Stochastic Multi-Armed Bandits with Unrestricted Delay Distributions,0.4581616669893265
