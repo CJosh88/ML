@@ -22,12 +22,13 @@ Ai2's [Old Ideas, Novel Problems](https://arxiv.org/abs/2610.02022) (October 202
 | 3 RND | Relative neighbour density (Wang et al., 2025, [arXiv 2503.01508](https://arxiv.org/abs/2503.01508)): the percentile of the idea's local density among its 100 neighbours' densities, each from 50 nearest papers |
 | 4 LLM judge | Qwen2.5-3B-Instruct (September 2024, before the ICLR 2026 submissions) on Ai2's reference prompt and its P1 (vague criteria) and P2 (no criteria) ablations, rendered from [allenai/novelty-eval](https://github.com/allenai/novelty-eval) at commit `9b2e69f` |
 | 5 Yin + judge | Logistic regression on one embedding model's Yin score and the judge's reference-prompt probability, 5-fold cross-validated; run once per embedding model |
+| 6 Reasoning judge (optional) | Qwen3-4B (April 2025), a hybrid model, on the reference prompt with its thinking mode off and on: the same model and prompt, with the think block left empty or filled before the verdict is read. Thinking is sampled with Qwen's recommended settings and capped at `THINK_BUDGET` (1,024) tokens |
 
 Conditions 1–3 each run on **two embedding models**, both trained before the ICLR 2026 submissions existed: **bge-small-en-v1.5** (2023; 33M parameters, first 256 tokens) and **BGE-M3** (2024; 568M parameters, first 512 tokens), the model Liu & Zhai used. The second tests whether a weak result is just down to a small embedding model.
 
 **Reference points:** the six frontier judges in Ai2's Figure 4 (Claude Sonnet 4.5, Opus 4.5, Opus 4.6, GPT-5.1, GPT-5.2, GPT-5.4), with reasoning and 3-sample verdicts, on the same items. Their P1 and P2 prompt rows are this notebook's `vague_criteria` and `no_criteria`. The values were read off the figure in arXiv 2610.02022v3 and are stored in the notebook and in `results/ai2_figure4.csv`.
 
-Optional, off by default: LFM3-1.7B (October 2026) as a possibly contaminated contrast judge, and the judge with the 5 nearest corpus abstracts as related work (Ai2's retrieval condition).
+Optional, off by default: condition 6 (`RUN_REASONING`), LFM3-1.7B (October 2026) as a possibly contaminated contrast judge, and the judge with the 5 nearest corpus abstracts as related work (Ai2's retrieval condition).
 
 **Held constant:** the benchmark items and a **leakage filter**. Many submissions were on arXiv before the deadline, so any corpus paper matching an idea's OpenReview ID or title, or with cosine similarity of 0.95 or more, is dropped from that idea's neighbours and logged. A paper dropped as a near-copy by bge-small is also dropped for BGE-M3, so both models are scored against the same prior work.
 
@@ -47,8 +48,8 @@ Optional, off by default: LFM3-1.7B (October 2026) as a possibly contaminated co
 2. No tokens are needed; all data and models are public.
 3. Leave `USE_DRIVE = True` to cache the corpus, its embeddings and the judge outputs under `MyDrive/ML/2026-11-novelty-embedding-baseline/`, so a rerun after a disconnect picks up where it stopped. Set it to `False` to cache under `outputs/` in the session instead.
 4. Optionally set `SMOKE = True` first (30k-paper corpus, 20 pairs per split) to check everything runs.
-5. **Run all.** A first run takes about 1.5–2 hours: about 10 minutes to embed the corpus with bge-small, an estimated 45–90 minutes with BGE-M3, and 15–20 for the judge (about 3,200 forward passes). Everything is cached, so a rerun after a disconnect skips finished work, and a rerun against a complete Drive cache from an earlier full run takes a few minutes.
-6. The last cell downloads `results/` and `figures/`. Commit `figures/`, `results/summary.csv`, `results/paired_tests.csv`, `results/comparison_with_ai2.csv`, `results/prompt_spread.csv`, `results/ai2_figure4.csv`, `results/quality_confound.csv` and `results/qualitative_examples.csv`. `results/idea_scores.csv` and `results/leakage_dropped.csv` contain benchmark and corpus titles (ODC-BY and CC BY-SA 4.0); commit them with those licences noted.
+5. **Run all.** A first run takes about 1.5–2 hours: about 10 minutes to embed the corpus with bge-small, an estimated 45–90 minutes with BGE-M3, and 15–20 for the judge (about 3,200 forward passes). Everything is cached, so a rerun after a disconnect skips finished work, and a rerun against a complete Drive cache from an earlier full run takes a few minutes. Condition 6 adds an estimated 1–2 hours for thinking on (616 pairwise prompts); run it with `SMOKE = True` first to see the real rate and how many traces hit the token cap.
+6. The last cell downloads `results/` and `figures/`. Commit `figures/`, `results/summary.csv`, `results/paired_tests.csv`, `results/comparison_with_ai2.csv`, `results/prompt_spread.csv`, `results/ai2_figure4.csv`, `results/quality_confound.csv` and `results/qualitative_examples.csv`. `results/idea_scores.csv` and `results/leakage_dropped.csv` contain benchmark and corpus titles (ODC-BY and CC BY-SA 4.0); commit them with those licences noted. With condition 6, `results/reasoning_traces.csv` holds Qwen3-4B's thinking traces, which quote the benchmark ideas (ODC-BY).
 
 ## Results
 
