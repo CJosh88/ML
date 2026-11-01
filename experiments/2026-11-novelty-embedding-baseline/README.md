@@ -21,17 +21,22 @@ Ai2's [Old Ideas, Novel Problems](https://arxiv.org/abs/2610.02022) (October 202
 | 2 kNN density | `1 − mean cosine` over the 10 nearest papers |
 | 3 RND | Relative neighbour density (Wang et al., 2025, [arXiv 2503.01508](https://arxiv.org/abs/2503.01508)): the percentile of the idea's local density among its 100 neighbours' densities, each from 50 nearest papers |
 | 4 LLM judge | Qwen2.5-3B-Instruct (September 2024, before the ICLR 2026 submissions) on Ai2's reference prompt and its P1 (vague criteria) and P2 (no criteria) ablations, rendered from [allenai/novelty-eval](https://github.com/allenai/novelty-eval) at commit `9b2e69f` |
-| 5 Yin + judge | Logistic regression on the Yin score and the judge's reference-prompt probability, 5-fold cross-validated |
+| 5 Yin + judge | Logistic regression on the bge-small Yin score and the judge's reference-prompt probability, 5-fold cross-validated |
 
-Optional, off by default: LFM3-1.7B (October 2026) as a possibly contaminated contrast judge, the judge with the 5 nearest corpus abstracts as related work (Ai2's retrieval condition), and BGE-M3 embeddings (Liu & Zhai's choice) instead of bge-small-en-v1.5.
+Conditions 1–3 each run on **two embedding models**, both trained before the ICLR 2026 submissions existed: **bge-small-en-v1.5** (2023; 33M parameters, first 256 tokens) and **BGE-M3** (2024; 568M parameters, first 512 tokens), the model Liu & Zhai used. The second tests whether a weak result is just down to a small embedding model.
 
-**Held constant:** the embedding model (bge-small-en-v1.5, 2023) for conditions 1–3, the benchmark items, and a **leakage filter**. Many submissions were on arXiv before the deadline, so any corpus paper matching an idea's OpenReview ID or title, or with cosine similarity of 0.95 or more, is dropped from that idea's neighbours and logged.
+**Reference points:** the six frontier judges in Ai2's Figure 4 (Claude Sonnet 4.5, Opus 4.5, Opus 4.6, GPT-5.1, GPT-5.2, GPT-5.4), with reasoning and 3-sample verdicts, on the same items. Their P1 and P2 prompt rows are this notebook's `vague_criteria` and `no_criteria`. The values were read off the figure in arXiv 2610.02022v3 and are stored in the notebook and in `results/ai2_figure4.csv`.
+
+Optional, off by default: LFM3-1.7B (October 2026) as a possibly contaminated contrast judge, and the judge with the 5 nearest corpus abstracts as related work (Ai2's retrieval condition).
+
+**Held constant:** the benchmark items and a **leakage filter**. Many submissions were on arXiv before the deadline, so any corpus paper matching an idea's OpenReview ID or title, or with cosine similarity of 0.95 or more, is dropped from that idea's neighbours and logged. A paper dropped as a near-copy by bge-small is also dropped for BGE-M3, so both models are scored against the same prior work.
 
 **Two deviations from Ai2's judge setup:** the verdict is read from the probabilities of `0` and `1` after a prefilled, empty `<thinking>` block, instead of sampled reasoning; and each pair runs once in each presentation order, with the two probabilities averaged.
 
 ## Metrics
 
-- Pairwise soft accuracy (ties count half) and strict accuracy, and pointwise macro-F1: Ai2's metrics. Embedding scores get a threshold chosen by 5-fold cross-validation.
+- Pairwise soft accuracy (ties count half) and strict accuracy, and pointwise macro-F1: Ai2's metrics. Embedding scores get a threshold chosen by 5-fold cross-validation. The comparison with Ai2's judges uses strict accuracy, as their Figure 4 does.
+- **Prompt spread:** how far each judge's pairwise accuracy moves across the three prompts, for this notebook's judge and Ai2's.
 - AUROC, the judge's order-flip rate, and seconds per 100 decisions.
 - **Quality check:** the Spearman correlation between each score and the mean reviewer rating *within* each pool, to see whether a score tracks quality rather than novelty.
 
@@ -40,10 +45,9 @@ Optional, off by default: LFM3-1.7B (October 2026) as a possibly contaminated co
 1. Open the notebook in Colab with the badge above and pick a **T4 GPU** runtime.
 2. No tokens are needed; all data and models are public.
 3. Leave `USE_DRIVE = True` to cache the corpus, its embeddings and the judge outputs under `MyDrive/ML/2026-11-novelty-embedding-baseline/`, so a rerun after a disconnect picks up where it stopped. Set it to `False` to cache under `outputs/` in the session instead.
-4. Optionally set `SMOKE = True` first (30k-paper corpus, 20 pairs per split, about 10 minutes) to check everything runs.
-5. Fill in `AI2_REFERENCE` with the frontier-judge accuracies from Ai2's Figure 4 if you want them on the chart.
-6. **Run all.** Expect about 30–40 minutes: about 10 to download and embed the corpus once, and 10–20 for the judge (about 3,700 forward passes).
-7. The last cell downloads `results/` and `figures/`. Commit `figures/`, `results/summary.csv`, `results/quality_confound.csv` and `results/qualitative_examples.csv`. `results/idea_scores.csv` and `results/leakage_dropped.csv` contain benchmark and corpus titles (ODC-BY and CC BY-SA 4.0); commit them with those licences noted.
+4. Optionally set `SMOKE = True` first (30k-paper corpus, 20 pairs per split) to check everything runs.
+5. **Run all.** A first run takes about 1.5–2 hours: about 10 minutes to embed the corpus with bge-small, an estimated 45–90 minutes with BGE-M3, and 15–20 for the judge (about 3,200 forward passes). Everything is cached, so a rerun after a disconnect skips finished work, and a rerun against an earlier run's Drive cache only has to embed the corpus with BGE-M3.
+6. The last cell downloads `results/` and `figures/`. Commit `figures/`, `results/summary.csv`, `results/comparison_with_ai2.csv`, `results/prompt_spread.csv`, `results/ai2_figure4.csv`, `results/quality_confound.csv` and `results/qualitative_examples.csv`. `results/idea_scores.csv` and `results/leakage_dropped.csv` contain benchmark and corpus titles (ODC-BY and CC BY-SA 4.0); commit them with those licences noted.
 
 ## Results
 
