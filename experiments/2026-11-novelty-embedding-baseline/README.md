@@ -52,7 +52,7 @@ Optional, off by default: LFM3-1.7B (October 2026) as a possibly contaminated co
 
 ## Results
 
-From the full run on 1 November 2026. Pairwise strict accuracy on 154 pairs per split, with 95% bootstrap confidence intervals for the embedding scores. Chance is 0.50.
+From the full run on 1 November 2026. Pairwise strict accuracy on 154 pairs per split, with 95% bootstrap confidence intervals. Chance is 0.50.
 
 | Condition | Human-Only | Human+Generated |
 |---|---|---|
@@ -62,16 +62,20 @@ From the full run on 1 November 2026. Pairwise strict accuracy on 154 pairs per 
 | **Yin, BGE-M3** | **0.60 (0.53–0.68)** | 0.54 (0.46–0.62) |
 | kNN density, BGE-M3 | 0.58 (0.51–0.66) | 0.53 (0.45–0.61) |
 | RND, BGE-M3 | 0.55 (0.47–0.63) | 0.71 (0.64–0.79) |
-| Qwen2.5-3B judge, three prompts | 0.55–0.58 | 0.06–0.14 |
-| Yin (bge-small) + judge | 0.61 | 0.94 |
+| Qwen2.5-3B judge, reference prompt | 0.55 (0.47–0.62) | 0.06 (0.03–0.10) |
+| Qwen2.5-3B judge, vague criteria (P1) | 0.58 (0.50–0.66) | 0.06 (0.03–0.10) |
+| Qwen2.5-3B judge, no criteria (P2) | 0.57 (0.49–0.65) | 0.14 (0.09–0.20) |
+| Yin (bge-small) + judge | 0.61 (0.53–0.69) | 0.94 (0.90–0.97) |
+| Yin (BGE-M3) + judge | 0.60 (0.53–0.68) | 0.95 (0.91–0.98) |
 | Ai2's six frontier judges, reference prompt | 0.74–0.84 | 0.40–0.86 |
 
-- **Human-Only (the main split):** with bge-small, distance is no better than chance. With BGE-M3, Yin reaches 0.60 (binomial p = 0.012) and beats bge-small Yin on the same pairs (28 pairs vs 14, McNemar p = 0.044). That puts it level with the 3B judge on pairs, but none of the embedding scores survives a Bonferroni correction for six conditions (p < 0.008), so treat it as suggestive. Pointwise, the judge separates the pools better (AUROC 0.64–0.68 against 0.57 for BGE-M3 Yin). Everything here is 14–24 points behind Ai2's frontier judges.
+- **Human-Only (the main split):** with bge-small, distance is no better than chance. With BGE-M3, Yin reaches 0.60 (binomial p = 0.012) and beats bge-small Yin on the same pairs (28 pairs vs 14, McNemar p = 0.044). None of the embedding scores survives a Bonferroni correction for six conditions (p < 0.008), so treat it as suggestive.
+- **Level with the 3B judge:** on pairs, BGE-M3 Yin and the judge are not significantly different under any prompt (McNemar p = 0.33–0.71), and the judge itself is not significantly above chance on any prompt (p = 0.06–0.30). Pointwise, the judge separates the pools better (AUROC 0.64–0.68 against 0.57 for BGE-M3 Yin). Combining BGE-M3 Yin with the judge adds nothing on pairs (0.60 either way). Everything here is 14–24 points behind Ai2's frontier judges.
 - **The two embedding models disagree a lot:** their Yin scores correlate at Spearman 0.64, and they pick the same nearest prior paper for only 19% of ideas.
-- **Human+Generated:** BGE-M3 RND's 0.71 is probably not novelty. Every pair sets a human idea against an LLM-written one, RND ranks the generated idea lower in 73% of pairs, and the same metric reaches only 0.55 when both ideas are human. The 3B judge prefers the generated idea in nearly every pair (as Ai2's Sonnet 4.5 does more often than not), and the combined condition's 0.94 comes from the regression inverting the judge, not from the two scores agreeing.
+- **Human+Generated:** BGE-M3 RND's 0.71 is probably not novelty. Every pair sets a human idea against an LLM-written one, RND ranks the generated idea lower in 73% of pairs, and the same metric reaches only 0.55 when both ideas are human. The 3B judge prefers the generated idea in nearly every pair (as Ai2's Sonnet 4.5 does more often than not), and the combined conditions' 0.94–0.95 come from the regression inverting the judge, not from the two scores agreeing.
 - **Quality check:** within each pool, no embedding score correlates with reviewer rating beyond |ρ| = 0.14, and none significantly.
 - **Leakage filter:** 31 matching preprints dropped by OpenReview ID or title, plus 17 bge-small and 7 further BGE-M3 near-copies (cosine ≥ 0.95).
 
-The confidence intervals, paired tests and the Yin (BGE-M3) + judge condition were added to the notebook after this run; rerunning against the Drive cache adds them to `results/` in a few minutes. `results/idea_scores.csv`, `results/leakage_dropped.csv` and `results/qualitative_examples.csv` contain benchmark titles (ODC-BY, Ai2) and corpus titles (CC BY-SA 4.0, Papers with Code archive).
+All paired tests are in `results/paired_tests.csv`. `results/idea_scores.csv`, `results/leakage_dropped.csv` and `results/qualitative_examples.csv` contain benchmark titles (ODC-BY, Ai2) and corpus titles (CC BY-SA 4.0, Papers with Code archive).
 
 A full write-up will go on the [portfolio site](https://cjosh88.github.io/ai-portfolio/), and this section will then link to it.
