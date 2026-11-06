@@ -8,6 +8,9 @@ Human-Only,"Yin (min distance), bge-small",Qwen2.5-3B judge (vague_criteria),0.5
 Human-Only,"Yin (min distance), bge-m3",Qwen2.5-3B judge (vague_criteria),0.6038961038961039,0.577922077922078,35,31,0.7122308826373509
 Human-Only,"Yin (min distance), bge-small",Qwen2.5-3B judge (no_criteria),0.512987012987013,0.5714285714285714,32,41,0.34918183817058834
 Human-Only,"Yin (min distance), bge-m3",Qwen2.5-3B judge (no_criteria),0.6038961038961039,0.5714285714285714,36,31,0.6254068289416483
+Human-Only,"Qwen3-4B judge (reference, thinking off)","Qwen3-4B judge (reference, thinking on)",0.6883116883116883,0.7207792207792207,8,13,0.38331031799316406
+Human-Only,"Yin (min distance), bge-m3","Qwen3-4B judge (reference, thinking on)",0.6038961038961039,0.7207792207792207,19,37,0.022241389472860106
+Human-Only,Qwen2.5-3B judge (reference),"Qwen3-4B judge (reference, thinking on)",0.5454545454545454,0.7207792207792207,11,38,0.00014197068519905542
 Human+Generated,"Yin (min distance), bge-small","Yin (min distance), bge-m3",0.36363636363636365,0.538961038961039,10,37,9.848878492846323e-05
 Human+Generated,"kNN density (k=10), bge-small","kNN density (k=10), bge-m3",0.3961038961038961,0.525974025974026,14,34,0.00551520148550111
 Human+Generated,"RND, bge-small","RND, bge-m3",0.474025974025974,0.7142857142857143,9,46,4.336383137015787e-07
@@ -17,3 +20,6 @@ Human+Generated,"Yin (min distance), bge-small",Qwen2.5-3B judge (vague_criteria
 Human+Generated,"Yin (min distance), bge-m3",Qwen2.5-3B judge (vague_criteria),0.538961038961039,0.05844155844155844,76,2,2.039496518310745e-20
 Human+Generated,"Yin (min distance), bge-small",Qwen2.5-3B judge (no_criteria),0.36363636363636365,0.14285714285714285,49,15,2.436457216293327e-05
 Human+Generated,"Yin (min distance), bge-m3",Qwen2.5-3B judge (no_criteria),0.538961038961039,0.14285714285714285,70,9,7.778844062771146e-13
+Human+Generated,"Qwen3-4B judge (reference, thinking off)","Qwen3-4B judge (reference, thinking on)",0.08441558441558442,0.09090909090909091,5,6,1.0
+Human+Generated,"Yin (min distance), bge-m3","Qwen3-4B judge (reference, thinking on)",0.538961038961039,0.09090909090909091,71,2,5.721707558702799e-19
+Human+Generated,Qwen2.5-3B judge (reference),"Qwen3-4B judge (reference, thinking on)",0.05844155844155844,0.09090909090909091,3,8,0.2265625
